@@ -1,0 +1,18 @@
+{
+	"barData": {
+		"labels": ["1/8", "2/8", "3/8", "4/8", "5/8", "6/8", "7/8"],
+		"datasets": [{
+			"label": "Total Visitors",
+			"backgroundColor": "rgba(160,220,255,1)",
+			"data": [255, 345, 321, 244, 466, 343, 233]
+		}, {
+			"label": "Coupons Redeemed",
+			"backgroundColor": "rgba(0,154,68,1)",
+			"data": [21, 33, 45, 24, 32, 55, 65]
+		}, {
+			"label": "Unidentified Visitors",
+			"backgroundColor": "rgba(111,194,180,1)",
+			"data": [454, 332, 454, 656, 231, 231, 546]
+		}]
+	}
+}

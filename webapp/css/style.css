@@ -1,0 +1,362 @@
+/* Enter your custom styles here */
+
+.brandHeader {
+    background-color: black !important;
+}
+
+.bgImage {
+    /*background-image: url('http://aurak.ac.ae/en/wp-content/uploads/2016/05/Industrial-1-1.jpg');*/
+    background-image: url('https://guardian.ng/wp-content/uploads/2016/03/Refinery-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+}
+
+.sapMShellBrandingBar {
+    height: 0px;
+}
+
+.sapMPageHeader::before {
+    border-top-width: 0rem;
+}
+
+.sapMBarPH {
+    background-color: #000000;
+}
+
+.sapUiUfdShellBrand {
+    background-color: yellowgreen;
+}
+
+.myShell .sapUiUfdShellHeader {
+    background-color: black;
+}
+
+.myShell .sapUiUfdShellBrand {
+    background-color: yellowgreen;
+}
+
+.test .sapContrast.sapMIBar.sapMFooter-CTX {
+    background-color: black !important;
+    border-top-color: yellowgreen;
+    border-top-width: thick;
+}
+
+.heatmap {
+    position: absolute;
+    width: 30px;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.liveData {
+    position: absolute;
+    width: 30px;
+    top: 60px;
+    left: 10px;
+    z-index: 2;
+}
+
+.marker {
+    position: absolute;
+    width: 30px;
+    top: 110px;
+    left: 10px;
+    z-index: 2;
+}
+
+.reset {
+    position: absolute;
+    width: 30px;
+    top: 160px;
+    left: 10px;
+    z-index: 2;
+}
+
+.floatPanel {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+.floatPanel2 {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.floatPanel3 {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #000000;
+    opacity: 1.0;
+}
+
+.floatPanel4 {
+    position: absolute;
+    top: 200px;
+    left: 5px;
+    /*right: 10px;*/
+    z-index: 2;
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+.floatSubPanel2 {
+    /*right: 10px;*/
+    z-index: 2;
+    border-bottom: 1px solid gray;
+}
+
+.floatSubPanel {
+    /*right: 10px;*/
+    z-index: 2;
+    border: 1px solid gray;
+}
+
+.floatSubPanel3 {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border: 1px solid gray;
+}
+
+.floatSubPanel5 {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #000000;
+    border: 1px solid gray;
+}
+
+.floatSubPanel6 {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #2f4f4f;
+    border: 2px solid #CECECE;
+}
+
+.floatSubPanel3HalfSelect {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #2F4F4F;
+    border: 2px solid green;
+}
+
+.floatSubPanel3Select {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #2F4F4F;
+    border: 5px solid green;
+}
+
+.floatSubPanelBorder {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    border: 5px solid green;
+}
+
+.floatSubPanel4 {
+    position: absolute;
+    left: 650px;
+    bottom: 20px;
+    background-color: #2F4F4F;
+    border: 1px solid gray;
+    opacity: 0.9;
+}
+
+.floatStatPanel {
+    /*right: 10px;*/
+    z-index: 2;
+    border: 1px solid gray;
+    opacity: 0.9;
+}
+
+.blackPanel {
+    color: black !important;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+.videoPlayer {
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.timeline {
+    position: absolute;
+    top: 50px;
+    z-index: 99;
+}
+
+.xtraLargeFont {
+    font-size: 200%;
+    color: #00ff00;
+}
+
+.dashLabel {
+    font-size: 180%;
+    color: #ffffff
+}
+
+.dashLabel2 {
+    font-size: 135%;
+    color: #ffffff
+}
+
+.statusText {
+    font-size: 120%;
+    color: #fafafa;
+}
+
+.dashStat {
+    font-size: 350%;
+    color: #ffffff;
+}
+
+.dashStatRed {
+    font-size: 250%;
+    color: #ff3333;
+}
+
+.dashStatBlue {
+    font-size: 250%;
+    color: #0080ff;
+}
+
+.dashStatGreen {
+    font-size: 250%;
+    color: #32d632;
+}
+
+.dashStatGreenSmall {
+    font-size: 150%;
+    color: #32d632;
+}
+
+.dashStatGreySmall {
+    font-size: 150%;
+    color: #ffffff;
+}
+
+.dashStatYellow {
+    font-size: 250%;
+    color: #FFFF4C;
+}
+
+.dashMetric {
+    font-size: 250%;
+    color: #ffffff;
+}
+
+.hbox_tile_LookAlike {
+    /*border: 1px solid black;*/
+    /*-moz-box-shadow: 0 0 5px 2px #fff;*/
+    /*box-shadow: 0 0 5px 2px #b9b1b1;*/
+    background-color: #000000;
+}
+
+.myStyle {
+    height: 21rem;
+    width: 11rem;
+}
+
+.progressWidth {
+    height: 2rem !important;
+    min-width: 35rem !important;
+    border-radious: 0rem !important;
+}
+
+.detailStatus {
+    color: #FFFFFF;
+    font-size: 120%;
+}
+
+.headerStatus {
+    color: #FFFFFF;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.headerInvi {
+    color: #FFFFFF;
+    font-size: 180%;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.optionText {
+    font-size: 140%;
+    color: #CECECE;
+}
+
+.confirmText {
+    font-size: 120%;
+    color: #CECECE;
+}
+
+.confirmOption {
+	font-size: 140%;
+	color: #ffffff;
+}
+
+.optionType {
+    font-size: 180%;
+    color: #FFFFFF;
+}
+
+.missionTile {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border: 1px solid gray;
+}
+
+.optionTileBottomRight {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border-bottom: 2px solid #CECECE;
+    border-right: 2px solid #CECECE;
+}
+
+.optionTileBottom {
+    background-color: #404D61;
+    border-bottom: 2px solid #CECECE;
+}
+
+.optionTileTopRight {
+    /*right: 10px;*/
+    /*z-index: 2;*/
+    background-color: #404D61;
+    border-top: 2px solid #CECECE;
+    border-right: 2px solid #CECECE;
+}
+
+.optionTileTop {
+    background-color: #404D61;
+    border-top: 2px solid #CECECE;
+}

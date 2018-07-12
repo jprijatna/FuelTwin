@@ -1,0 +1,52 @@
+{
+	"markers": [{
+		"shop": "Commonwealth Bank",
+		"position": [-32.762326, 151.590764],
+		"type": "Camera"
+	}, {
+		"shop": "Optus World",
+		"position": [-32.762307, 151.591327],
+		"type": "Camera"
+	}, {
+		"shop": "Woolworths",
+		"position": [-32.763168, 151.591824],
+		"type": "Camera"
+	}, {
+		"shop": "Coles",
+		"position": [-32.762418, 151.592136],
+		"type": "Camera"
+	}, {
+		"shop": "Priceline",
+		"position": [-32.763520, 151.591463],
+		"type": "Camera"
+	}, {
+		"shop": "Athlete's Foot",
+		"position": [-32.762844, 151.590938],
+		"type": "Camera"
+	}, {
+		"shop": "Commonwealth Bank",
+		"position": [-32.762364, 151.590798],
+		"type": "Beacon"
+	}, {
+		"shop": "Optus World",
+		"position": [-32.762352, 151.591276],
+		"type": "Beacon"
+	}, {
+		"shop": "Woolworths",
+		"position": [-32.763218, 151.591854],
+		"type": "Beacon"
+	}, {
+		"shop": "Coles",
+		"position": [-32.762458, 151.592166],
+		"type": "Beacon"
+	}, {
+		"shop": "Priceline",
+		"position": [-32.763566, 151.591531],
+		"type": "Beacon"
+	}, {
+		"shop": "Athlete's Foot",
+		"position": [-32.762881, 151.590924],
+		"type": "Beacon"
+	}]
+
+}

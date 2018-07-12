@@ -1,0 +1,227 @@
+<mvc:View controllerName="DPROP.controller.Main" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns:tnt="sap.tnt" xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:acc="DPROP.control" xmlns:l="sap.ui.layout" xmlns:vk="sap.ui.vk">
+	<tnt:ToolHeader id="brandHeader" class="brandHeader">
+		<Image src="images/DeloitteLogo.png" height="15px" class="sapUiMediumMarginBegin sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+		<ToolbarSpacer/>
+		<!--<Image src="images/MaintAsst.png" height="70px" class="sapUiTinyMarginTop"/>-->
+		<ToolbarSpacer/>
+		<Image src="images/SAPLogo.png" height="20px" class="sapUiMediumMarginEnd sapUiTinyMarginTop sapUiTinyMarginBottom"/>
+	</tnt:ToolHeader>
+	<App id="SplitApp1">
+		<Page id="videoPage" title="Deloitte Digital Twin" class="sapUiStdPage test bgImage" showHeader="false">
+			<content>
+				<!--<Button text="O" press="changeView"/>-->
+				<!--<Button text="Break" press="breakOpenModel"/>-->
+				<FlexBox id="statisticsView" width="100%" visible="true">
+					<VBox id="siri_model" width="23%" class="floatPanel2" height="220px" visible="true">
+						<HBox width="100%">
+							<VBox width="425px" height="220px" class="floatSubPanel">
+								<Text class="statusText sapUiMediumMargin" id="twinText" text=""></Text>
+							</VBox>
+							<VBox width="50px" height="220px" class="floatSubPanel" alignItems="Center" justifyContent="Center">
+								<core:Icon id="microIcon" src="sap-icon://microphone" color="#F2F2F2" class="sapUiTinyMargin" size="2em"/>
+								<core:Icon id="soundIcon" src="sap-icon://sound-loud" color="#F2F2F2" class="sapUiTinyMargin" size="2em"/>
+								<core:Icon src="sap-icon://sys-enter" color="#F2F2F2" class="sapUiTinyMargin" press="changeView" size="2em"/>
+								<core:Icon src="sap-icon://action-settings" color="#F2F2F2" class="sapUiTinyMargin" press="breakOpenModel" size="2em"/>
+							</VBox>
+						</HBox>
+					</VBox>
+					<VBox id="deloitte_panel" width="1895px" class="sapUiTinyMargin sapUiLargeMarginTop floatPanel" visible="true"></VBox>
+					<VBox id="fuel_panel" width="98.5%" class="sapUiTinyMargin sapUiLargeMarginTop floatPanel" visible="false">
+						<HBox width="100%" height="750px">
+							<VBox width="8%" class="sapUiTinyMarginTopBottom sapUiTinyMarginBegin">
+								<HBox width="100%" height="20%" alignItems="Center" justifyContent="Center" class="floatSubPanel5">
+									<Label text="E10" class="headerStatus"></Label>
+								</HBox>
+								<HBox width="100%" height="20%" alignItems="Center" justifyContent="Center" class="floatSubPanel3">
+									<Label text="Diesel" class="headerStatus"></Label>
+								</HBox>
+								<HBox width="100%" height="20%" alignItems="Center" justifyContent="Center" class="floatSubPanel5">
+									<Label text="Avtur" class="headerStatus"></Label>
+								</HBox>
+								<HBox width="100%" height="20%" alignItems="Center" justifyContent="Center" class="floatSubPanel5">
+									<Label text="Avcat" class="headerStatus"></Label>
+								</HBox>
+								<HBox width="100%" height="20%" alignItems="Center" justifyContent="Center" class="floatSubPanel5">
+									<Label text="ULP" class="headerStatus"></Label>
+								</HBox>
+							</VBox>
+							<HBox width="74%" class="floatSubPanel3 sapUiTinyMarginTopBottom sapUiTinyMarginEnd">
+								<VBox width="60%" class="sapUiTinyMargin sapUiLargeMarginBottom" justifyContent="Center">
+									<Label text="E10" class="sapUiMediumMargin headerStatus"></Label>
+									<VBox width="100%" height="30%" class="sapUiLargeMarginBegin" alignItems="Start">
+										<VBox width="20%" height="100%" justifyContent="Center" alignItems="Start">
+											<Label text="Ballarat" class="sapUiSmallMarginBegin sapUiSmallMarginEnd detailStatus"></Label>
+										</VBox>
+										<VBox width="80%" height="100%" justifyContent="Center" alignItems="Center">
+											<ProgressIndicator class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom progressWidth" percentValue="35"
+												displayValue="35%" showValue="true" state="Warning" displayOnly="true"></ProgressIndicator>
+											<Label text="250L" class="detailStatus"></Label>
+										</VBox>
+									</VBox>
+									<VBox width="100%" height="30%" class="sapUiLargeMarginBegin" alignItems="Start">
+										<VBox width="20%" height="100%" justifyContent="Center" alignItems="Start">
+											<Label text="Cairns" class="sapUiSmallMarginBegin sapUiSmallMarginEnd detailStatus"></Label>
+										</VBox>
+										<VBox width="80%" height="100%" justifyContent="Center" alignItems="Center">
+											<ProgressIndicator class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom progressWidth" percentValue="90"
+												displayValue="90%" showValue="true" state="Success" displayOnly="true"></ProgressIndicator>
+											<Label text="2537L" class="detailStatus"></Label>
+										</VBox>
+									</VBox>
+									<VBox width="100%" height="30%" class="sapUiLargeMarginBegin" alignItems="Start">
+										<VBox width="20%" height="100%" justifyContent="Center" alignItems="Start">
+											<Label text="Puckapunyal" class="sapUiSmallMarginBegin sapUiSmallMarginEnd detailStatus"></Label>
+										</VBox>
+										<VBox width="80%" height="100%" justifyContent="Center" alignItems="Center">
+											<ProgressIndicator class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom progressWidth" percentValue="30"
+												displayValue="30%" showValue="true" state="Error" displayOnly="true"></ProgressIndicator>
+											<Label text="680L" class="detailStatus"></Label>
+										</VBox>
+									</VBox>
+									<VBox width="100%" height="30%" class="sapUiLargeMarginBegin" alignItems="Start">
+										<VBox width="20%" height="100%" justifyContent="Center" alignItems="Start">
+											<Label text="Holsworthy" class="sapUiSmallMarginBegin sapUiSmallMarginEnd detailStatus"></Label>
+										</VBox>
+										<VBox width="80%" height="100%" justifyContent="Center" alignItems="Center">
+											<ProgressIndicator class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom progressWidth" percentValue="85"
+												displayValue="85%" showValue="true" state="Success" displayOnly="true"></ProgressIndicator>
+											<Label text="1520L" class=" detailStatus"></Label>
+										</VBox>
+									</VBox>
+									<VBox width="100%" height="30%" class="sapUiLargeMarginBegin" alignItems="Start">
+										<VBox width="20%" height="100%" justifyContent="Center" alignItems="Start">
+											<Label text="Townsville" class="sapUiSmallMarginBegin sapUiSmallMarginEnd detailStatus"></Label>
+										</VBox>
+										<VBox width="80%" height="100%" justifyContent="Center" alignItems="Center">
+											<ProgressIndicator class="sapUiSmallMarginBegin sapUiSmallMarginEnd sapUiSmallMarginBottom progressWidth" percentValue="67"
+												displayValue="67%" showValue="true" state="Warning" displayOnly="true"></ProgressIndicator>
+											<Label text="1230L" class=" detailStatus"></Label>
+										</VBox>
+									</VBox>
+								</VBox>
+								<VBox width="40%" class="sapUiTinyMargin" justifyContent="Center">
+									<Label text="Text" class="sapUiMediumMargin headerInvi"></Label>
+									<acc:ChartJSControl width="265" height="315" responsive="true" chartType="bar" id="temperatureChart"
+										options="{title: {display: 'true', text: 'Fuel Level (in \'000L)', fontColor: 'white', fontSize: 18}, legend: { labels: { fontColor: 'white', fontSize: 12 } }, scales: { xAxes: [{ticks:{ fontColor: 'white', fontSize: 12},gridLines: { color: 'white'} }], yAxes: [{display: true, ticks: { fontColor: 'white', fontSize: 12, beginAtZero: true } }]}}"/>
+								</VBox>
+							</HBox>
+							<VBox width="18%" height="100%" class="sapUiTinyMargin">
+								<VBox width="100%" class="floatSubPanel" height="98%" justifyContent="Center">
+									<VBox alignItems="Center" class="sapUiSmallMarginTopBottom">
+										<Label text="Total Stock" class="dashLabel sapUiMediumMarginTop"/>
+										<HBox><Label text="23000" class="dashStat sapUiTinyMargin sapUiMediumMarginBottom" design="Bold"/><Label text="L" class="dashMetric sapUiSmallMarginTop" design="Bold"/></HBox>
+									</VBox>
+									<VBox alignItems="Center" class="sapUiSmallMarginTopBottom">
+										<Label text="Total Usage" class="dashLabel sapUiMediumMarginTop"/>
+										<HBox><Label text="11230" class="dashStat sapUiTinyMargin sapUiMediumMarginBottom" design="Bold"/><Label text="L" class="dashMetric sapUiSmallMarginTop" design="Bold"/></HBox>
+									</VBox>
+									<VBox alignItems="Center" class="sapUiSmallMarginTopBottom">
+										<Label text="Total Sites" class="dashLabel sapUiMediumMarginTop"/>
+										<HBox><Label text="5" class="dashStat sapUiTinyMargin sapUiMediumMarginBottom" design="Bold"/><Label text="" class="dashMetric sapUiSmallMarginTop" design="Bold"/></HBox>
+									</VBox>
+								</VBox>
+							</VBox>
+						</HBox>
+					</VBox>
+					<VBox id="model_panel" width="98.5%" class="sapUiTinyMargin sapUiLargeMarginTop floatPanel3" height="770px" visible="false">
+						<vk:Viewer id="viewer" toolbarTitle="" enableToolbar="false" showAllHotspots="false" enableProgressIndicator="false" width="100%"
+							height="770px" showSceneTree="false" showStepNavigation="false" showStepNavigationThumbnails="false" enableFullScreen="true"></vk:Viewer>
+						<HBox width="20%" height="17%" class="floatSubPanel4" id="damageStat" visible="true">
+							<VBox width="50%" height="100%" class="floatSubPanel" alignItems="Center">
+								<Label text="Damage Rate" class="dashLabel2 sapUiTinyMargin sapUiSmallMarginTop"/>
+								<Label text="4x ↑" class="dashStatRed sapUiTinyMargin" design="Bold"/>
+							</VBox>
+							<VBox width="50%" height="100%" class="floatSubPanel" alignItems="Center">
+								<Label text="Remaining Life" class="dashLabel2 sapUiTinyMargin sapUiSmallMarginTop"/>
+								<Label text="58.3% ↓" class="dashStatBlue sapUiTinyMargin" design="Bold"/>
+							</VBox>
+						</HBox>
+					</VBox>
+					<VBox id="details_panel" width="98.5%" class="sapUiTinyMargin sapUiLargeMarginTop floatPanel4" height="770px" visible="false">
+						<HBox width="100%" height="100%">
+							<VBox width="50%" class="sapUiMediumMargin">
+								<HBox width="100%" height="20%">
+									<VBox width="33%" height="100%" class="missionTile" alignItems="Center" justifyContent="Center">
+										<Label text="Site" class="optionText"></Label>
+										<Label text="Ballarat" class="optionType"></Label>
+									</VBox>
+									<VBox width="34%" height="100%" class="missionTile" alignItems="Center" justifyContent="Center">
+										<Label text="Service" class="optionText"></Label>
+										<Label text="Army/Joint" class="optionType"></Label>
+									</VBox>
+									<VBox width="33%" height="100%" class="missionTile" alignItems="Center" justifyContent="Center">
+										<Label text="Use" class="optionText"></Label>
+										<Label text="Commercial" class="optionType"></Label>
+									</VBox>
+								</HBox>
+								<VBox width="100%" height="20%" class="missionTile sapUiMediumMarginTop" alignItems="Center" justifyContent="Center">
+									<HBox width="100%" height="100%" justifyContent="Center" alignItems="Center">
+										<Label text="Diesel" class="optionType sapUiLargeMarginEnd"></Label>
+										<ProgressIndicator class="progressWidth" percentValue="35" displayValue="35%" showValue="true" state="Warning" displayOnly="true"></ProgressIndicator>
+									</HBox>
+								</VBox>
+								<HBox width="100%" height="20%" class="sapUiMediumMarginTop">
+									<VBox width="33%" height="100%" class="missionTile sapUiSmallMarginEnd" alignItems="Center" justifyContent="Center">
+										<Label text="Stock" class="optionText"></Label>
+										<Label text="250L" class="optionType"></Label>
+									</VBox>
+									<VBox width="34%" height="100%" class="missionTile sapUiSmallMarginBeginEnd" alignItems="Center" justifyContent="Center">
+										<Label text="Capacity" class="optionText"></Label>
+										<Label text="700L" class="optionType"></Label>
+									</VBox>
+									<VBox width="33%" height="100%" class="missionTile sapUiSmallMarginBegin" alignItems="Center" justifyContent="Center">
+										<Label text="Last Refuel" class="optionText"></Label>
+										<Label text="17 days" class="optionType"></Label>
+									</VBox>
+								</HBox>
+								<HBox width="100%" height="20%" class="sapUiMediumMarginTop">
+									<VBox width="33%" height="100%" class="missionTile sapUiSmallMarginEnd" alignItems="Center" justifyContent="Center">
+										<Label text="Oxygen Level" class="optionText"></Label>
+										<Label text="11%" class="optionType"></Label>
+									</VBox>
+									<VBox width="34%" height="100%" class="missionTile sapUiSmallMarginBeginEnd" alignItems="Center" justifyContent="Center">
+										<Label text="Temperature" class="optionText"></Label>
+										<Label text="14°C" class="optionType"></Label>
+									</VBox>
+									<VBox width="33%" height="100%" class="missionTile sapUiSmallMarginBegin" alignItems="Center" justifyContent="Center">
+										<Label text="Stock on Order" class="optionText"></Label>
+										<Label id="soo" text="400L" class="optionType"></Label>
+									</VBox>
+								</HBox>
+							</VBox>
+							<VBox id="detailsChart" width="45%" height="95%" class="sapUiMediumMargin" visible="true">
+								<acc:ChartJSControl width="380" height="300" responsive="true" chartType="line" id="cycleChart"
+									options="{title: {display: 'true', text: 'Stock Levels', fontColor: 'white', fontSize: 12}, legend: { labels: { fontColor: 'white', fontSize: 8 } }, scales: { xAxes:[{gridLines: { color: 'white'}, ticks: {fontColor: 'white', fontSize: 8}}], yAxes: [{ display: true, ticks: { fontColor: 'white', fontSize: 8, beginAtZero: true } }]}}"/>
+							</VBox>
+							<VBox id="detailsWarning" width="45%" height="95%" class="sapUiMediumMargin" justifyContent="Center" alignItems="Center" visible="false">
+								<VBox width="50%" height="20%" justifyContent="Center" alignItems="Center" class="floatSubPanel6">
+									<core:Icon src="sap-icon://warning2" color="#ffff00" class="sapUiTinyMargin" size="2em"/>
+									<Label text="Are you sure?" class="headerStatus"></Label>
+									<Label text="More fuel are on the way" class="confirmText"></Label>
+								</VBox>
+								<HBox width="50%" height="10%" justifyContent="Center" alignItems="Center" class="floatSubPanel6">
+									<VBox width="50%" height="100%" justifyContent="Center" alignItems="Center">
+										<Label text="Yes" class="confirmOption"></Label>
+									</VBox>
+									<VBox width="50%" height="100%" justifyContent="Center" alignItems="Center">
+										<Label text="No" class="confirmOption"></Label>
+									</VBox>
+								</HBox>
+							</VBox>
+							<VBox id="detailsConfirm" width="45%" height="95%" class="sapUiMediumMargin" justifyContent="Center" alignItems="Center" visible="false">
+								<VBox width="50%" height="30%" justifyContent="Center" alignItems="Center" class="floatSubPanel6">
+									<core:Icon src="sap-icon://sys-enter" color="#00ff00" class="sapUiTinyMargin" size="2em"/>
+									<Label text="Purchase Req Created" class="headerStatus"></Label>
+									<Label text="PR#8191" class="confirmText"></Label>
+								</VBox>
+			
+							</VBox>
+						</HBox>
+					</VBox>
+				</FlexBox>
+			</content>
+		</Page>
+	</App>
+</mvc:View>

@@ -1,0 +1,29 @@
+{
+
+	"pieData": {
+		"labels": ["Identified Visitors", "Unidentified Visitors"],
+		"datasets": [{
+			"label": "Shopping Centre",
+			"backgroundColor": ["rgba(0,191,255,0.8)", "rgba(82,244,16,0.8)"],
+			"data": [39,61]
+			
+		}, {
+			"label": "Woolworths Green Hills",
+			"backgroundColor": ["rgba(0,191,255,0.8)", "rgba(82,244,16,0.8)"],
+			"data": [57,43]
+			
+		}, {
+			"label": "Coles Supermarkets",
+			"backgroundColor": ["rgba(0,191,255,0.8)", "rgba(82,244,16,0.8)"],
+			"data": [20,80]
+			
+		}, {
+			"label": "Commonwealth Bank",
+			"backgroundColor": ["rgba(0,191,255,0.8)", "rgba(82,244,16,0.8)"],
+			"data": [84,16]
+			
+		}]
+
+	}
+
+}

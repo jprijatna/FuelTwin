@@ -1,0 +1,37 @@
+{
+	"lineData": {
+		"labels": ["09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"],
+		"datasets": [{
+			"label": "Commonwealth Bank",
+			"borderColor": "rgba(0,157,255,1)",
+			"backgroundColor": "rgba(0,157,255,0)",
+				"data": [0, 16, 18, 14, 145, 223, 334, 444, 554, 435, 231, 123, 80, 10]
+		}, {
+			"label": "Optus World",
+			"borderColor": "rgba(255,0,47,1)",
+			"backgroundColor": "rgba(255,0,47,0)",
+				"data": [43, 156, 321, 456, 356, 234, 200, 210, 220, 210, 156, 145, 132, 20]
+		}, {
+			"label": "Woolworths",
+			"borderColor": "rgba(40,112,67,1)",
+			"backgroundColor": "rgba(40,112,67,0)",
+			"data": [100, 143, 123, 133, 112, 142, 132, 122, 123, 121, 132, 133, 122, 123]
+		}, {
+			"label": "Coles",
+			"borderColor": "rgba(240,240,34,1)",
+			"backgroundColor": "rgba(40,112,67,0)",
+			"data": [354, 234, 124, 456, 546, 456, 143, 443, 232, 242, 323, 375, 174, 80]
+		}, {
+			"label": "Athlete's Foot",
+			"borderColor": "rgba(220,220,220,1)",
+			"backgroundColor": "rgba(40,112,67,0)",
+			"data": [354, 234, 124, 456, 546, 456, 232, 234, 232, 323, 232, 123, 80, 0]
+		
+		}, {
+			"label": "Priceline",
+			"borderColor": "rgba(125,125,60,1)",
+			"backgroundColor": "rgba(40,112,67,0)",
+			"data": [32, 143, 256, 300, 546, 578, 467, 43, 156, 321, 456, 356, 234, 200]
+		}]
+	}
+}
